@@ -1,0 +1,16 @@
+<div class="text-center">
+    <app-profilecontainer></app-profilecontainer>
+    <hr style="width:90% ; margin-left:10%;margin-bottom:2%" >
+    <header class="shadow-lg p-3 mb-5 bg-white rounded"  class="container-lg" >
+    <div  class="formm">
+   
+    <label style="margin-left:-90%;margin-top:10px">Name</label>
+    <input type="text" class="form-control rounded-pill" style="width:50%; margin-top:1%" name="name"  [(ngModel)]="name" >
+
+   
+
+    <button (click)="createCategory()"
+        class="btn btn" style="background-color:#10062d ;margin-top:2%; color:white">
+       create
+    </button>
+  </div>

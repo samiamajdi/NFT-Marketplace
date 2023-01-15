@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div *ngIf="user != null" class="container main-secction">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 image-section">
+            <img [src]="user.background ? user.background:'http://nicesnippets.com/demo/Nature-Night-Sky-Stars-Blurred-Light-Show-Mountains-WallpapersByte-com-1920x1080.jpg' " >
+        </div>
+        <div class="row user-left-part">
+            <div class="col-md-3 col-sm-3 col-xs-12 user-profil-part pull-left">
+                <div class="row ">
+                    <div class="col-md-12 col-md-12-sm-12 col-xs-12 user-image">
+                        <img style="margin-left:-80%" [src]="user.profil ? user.profil:'https://media4.giphy.com/media/H9M7lvORlmeFmvGoqY/200w.webp?cid=ecf05e470pfmwe09893nn01jhb40elr24mq8vo4htai1ez37&rid=200w.webp&ct=g' ">
+                    </div>
+
+                    <div class="row user-detail-row">
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-12 pull-right profile-right-section">
+                <div class="row profile-right-section-row">
+                    <div class="col-md-12 profile-header">
+                        <div class="row">
+                            <div >
+                                <h1 class="n ">{{name}}</h1>
+                            </div>
+                            <!-- <div class="col-md-4 col-sm-6 col-xs-6 profile-header-section1 text-right pull-rigth gap-20">
+                                <img style="width: 45px;height:45px; cursor: pointer;" src="https://img.icons8.com/material-rounded/512/twitter.png" alt="">
+                                <img style="width: 45px;height:45px; cursor: pointer;" src="https://img.icons8.com/material-rounded/512/instagram-new.png" alt="">
+                                <img style="width: 45px;height:45px; cursor: pointer;" src="https://img.icons8.com/material/512/telegram-app.png" alt="">
+                                <img style="width: 45px;height:45px; cursor: pointer;" src="https://img.icons8.com/material-rounded/512/facebook-new.png" alt="">
+                                <img style="width: 45px;height:45px; cursor: pointer;" src="https://img.icons8.com/material-rounded/512/share.png" alt="">
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8  profile-tag-section text-center">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 profile-tag">
+                                        <p>Volume total</p>
+                                        <span>{{user.volume ? user.volume : '1455 ETH'}} &nbsp; ETH</span>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-3 profile-tag">
+                                        <a href="#"><i class="fa fa-id-card-o" aria-hidden="true"></i></a>
+                                        <p>Prix plancher</p>
+                                        <span>0.032 ETH</span>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 profile-tag">
+                                        <a href="#"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                                        <p>meilleure offre</p>
+                                        <span>0.00232 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>

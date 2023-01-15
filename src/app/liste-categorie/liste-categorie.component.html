@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+  <nav id="topnav"  class="navbar navbar-expand-lg sticky-top " >
+    <div class="container-fluid">
+      <a class="navbar-brand" id="tu"style=" font-family:  Verdana, sans-serif;font-weight:bold;">NFT Marketplace</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="form-group has-search" style="margin-left:10%; width:40%">
+        <!-- <i class="fa-light fa-magnifying-glass"></i> -->
+        <i style="color:rgb(207, 202, 230);margin-left:102%" class="fa fa-search form-control-feedback"></i>
+        <input type="text" class="form-control rounded-pill" style="margin-top:-5%" placeholder="Search" >
+
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <i class=" fa fa-solid fa-cart-shopping"></i>
+        <div   class="dropdown" >
+          <button class="btn btn-warning " class="dropbtn" > <i  class="fa fa-solid fa-bars"></i> </button>
+          <div class="dropdown-content">
+
+            <button  class="log">profile</button>
+            <button  class="log" (click)="create()"  >create </button>
+          </div>
+        </div>
+       <div >
+
+
+        <!-- <button *ngIf="user.id!=0" class="btn btn-warning rounded-pill"> <a routerLink="profile">{{user.name}} </a></button>
+        <form  *ngIf="user.id!=0" (ngSubmit)="logout()"><button  type="submit"class="btn btn-warning rounded-pill"> Logout </button></form>
+        -->
+       </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div class="categories">
+    <div *ngFor="let cat of b">
+    <div class="card-body">
+      <h5 class="card-title"><Button class="btn btn" style="background-color:#10062d ; color:white" (click)="view(cat.id)">{{cat.label}}</Button>
+    </h5>
+      
+      <a href="#" class="btn btn" style="background-color:#876bdd ; color:#10062d"> View category </a>
+    </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
+
+  
